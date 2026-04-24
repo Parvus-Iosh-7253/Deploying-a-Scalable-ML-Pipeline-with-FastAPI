@@ -3,19 +3,19 @@ import json
 import requests
 
 # TODO: send a GET using the URL http://127.0.0.1:8000
-r = None # Your code here
+r = requests.get("http://127.0.0.1:8000") # Your code here
 
 # TODO: print the status code
-# print()
+print(f"Status Code: {r.status_code}")
 # TODO: print the welcome message
-# print()
+print(f"Result: {r.json()['welcome']}")
 
 
 
 data = {
     "age": 37,
     "workclass": "Private",
-    "fnlgt": 178356,
+    "fnlwgt": 178356,
     "education": "HS-grad",
     "education-num": 10,
     "marital-status": "Married-civ-spouse",
@@ -30,9 +30,9 @@ data = {
 }
 
 # TODO: send a POST using the data above
-r = None # Your code here
+r = requests.post("http://127.0.0.1:8000/data/", json=data) # Your code here
 
 # TODO: print the status code
-# print()
+print(f"Status Code: {r.status_code}")
 # TODO: print the result
-# print()
+print(f"Result: {r.json()['result']}")
