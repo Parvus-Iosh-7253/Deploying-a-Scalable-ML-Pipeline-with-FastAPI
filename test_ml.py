@@ -24,9 +24,6 @@ def test_training_testing_size():
 
     assert X_train.shape[1] == 108
     assert X_test.shape[1] == 108
-    
-    test_size = int(data.shape[0] * 0.2)
-    train_size = data.shape[0] - test_size
 
     assert round(X_train.shape[0] / data.shape[0], 1) == 0.8
     assert round(X_test.shape[0] / data.shape[0], 1) == 0.2
