@@ -1,4 +1,5 @@
-Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
+# Prompt
+"Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 # Environment Set up (pip or conda)
 * Option 1: use the supplied file `environment.yml` to create a new environment with conda
@@ -26,4 +27,7 @@ Working in a command line environment is recommended for ease of use with git an
 # API Creation
 *  Create a RESTful API using FastAPI this must implement:
     * GET on the root giving a welcome message.
-    * POST that does model inference.
+    * POST that does model inference."
+
+# Links:
+GitHub Repository: https://github.com/Parvus-Iosh-7253/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
